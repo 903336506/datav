@@ -64,7 +64,7 @@ def create_message():
     msg = Message(name=formdata['name'], text=formdata['text'])
     db.session.add(msg)
     db.session.commit()
-    # 201 表示资源创建成功
+    # 201 表示资源创建成功1
     return jsonify(ok=True), 201
 
 
